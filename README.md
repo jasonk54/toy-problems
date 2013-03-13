@@ -10,8 +10,8 @@ You'll find each day's toy problem in its own folder under `/src`.
 Getting a Copy of the Repo
 --------------------------
 If you haven't already, fork the repository on GitHub and clone your newly created
-repo down to you computer. Afterward, check out your class's branch and create a new
-branch off of it. For example:
+repo down to your computer. Afterward, check out your class's branch and create a
+new branch off of it. For example:
 
     git checkout your_class_branch      // Replace your class's branch name here
     git branch your_github_username     // Replace your username here
