@@ -5,7 +5,7 @@ code challenge.
 
 Using this Repository
 ---------------------
-You'll find each day's toy problem in its own folder under `/src`.
+You'll find each day's toy problem in its own folder under `/problems`.
 
 Getting a Copy of the Repo
 --------------------------
