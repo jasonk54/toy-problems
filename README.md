@@ -5,8 +5,7 @@ code challenge.
 
 Using this Repository
 ---------------------
-Open `index.html` and click on today's toy problem to run the problem's specs.
-(Note that not all toy problems come with specs.)
+You'll find each day's toy problem in its own folder under `/src`.
 
 Getting a Copy of the Repo
 --------------------------
