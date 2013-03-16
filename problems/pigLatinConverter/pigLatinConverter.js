@@ -5,10 +5,10 @@
 //
 //   "happy" → "appyhay"
 //
-// For words that begin with vowel sounds, add "ay" to the end of the word.
+// For words that begin with vowels, add "ay" to the end of the word.
 // For example:
 //
-//   "duck" → "uckday"
+//   "anchor" → "anchoray"
 //
 //
 // Extra credit: Make your function accept a string that contains multiple
