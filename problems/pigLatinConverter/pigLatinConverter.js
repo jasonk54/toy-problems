@@ -12,10 +12,9 @@
 //
 //
 // Extra credit: Make your function accept a string that contains multiple
-// words.
+// words. Don't worry about punctuation.
 //
-// Extra extra credit: Write a function that detects Pig Latin and converts
-// it back to English.
+// Extra extra credit: Make your function handle punctuation properly.
 
 
 var convertToPigLatin = function(string) {
