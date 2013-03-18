@@ -19,6 +19,17 @@
 //   http://www.degraeve.com/reference/urlencoding.php
 //
 
-
 var htmlEscaper = function(string) {
+	return string.replace(/\s/g, '%20');
 };
+
+
+
+	// for (var i = 0; i < string.length; i++) {
+	// 	if (string[i] === ' ') {
+	// 		console.log('found space')
+	// 		string[i] = string[i].replace(' ', '%20');
+	// 	}
+	// 	return string;
+	// 	}
+	// };
