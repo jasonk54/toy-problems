@@ -20,16 +20,15 @@
 //
 
 var htmlEscaper = function(string) {
-	return string.replace(/\s/g, '%20');
+	// (Using Regex)  return string.replace(/\s/g, '%20');
+	// (Not using Regex)
+var string = string.split('');
+for (var i = 0; i < string.length; i++) {
+	if (string[i] === ' ') {
+		string[i] = string[i].replace(' ', '%20');
+	}
+}
+return string.join('');
 };
 
 
-
-// for (var i = 0; i < string.length; i++) {
-// 	if (string[i] === ' ') {
-	// 		console.log('found space')
-	// 		string[i] = string[i].replace(' ', '%20');
-	// 	}
-	// 	return string;
-	// 	}
-	// };
