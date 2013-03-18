@@ -43,7 +43,3 @@ var modulo = function(x, y) {
 	}
 	return result;
 };
-
-
-y = 4
-12 - 3 = 9
