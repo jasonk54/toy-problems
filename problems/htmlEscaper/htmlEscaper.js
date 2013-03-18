@@ -16,7 +16,7 @@
 // JavaScript's character codes should largely match up with HTML's entity
 // codes. You can find a list of those here:
 //
-//   http://www.theukwebdesigncompany.com/articles/entity-escape-characters.php
+//   http://www.degraeve.com/reference/urlencoding.php
 //
 
 
