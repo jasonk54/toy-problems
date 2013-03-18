@@ -25,8 +25,8 @@ var htmlEscaper = function(string) {
 
 
 
-	// for (var i = 0; i < string.length; i++) {
-	// 	if (string[i] === ' ') {
+// for (var i = 0; i < string.length; i++) {
+// 	if (string[i] === ' ') {
 	// 		console.log('found space')
 	// 		string[i] = string[i].replace(' ', '%20');
 	// 	}
