@@ -29,11 +29,22 @@
 // var bubbleSort = createBubbleSort();
 // bubbleSort([2, 1, 3]); // yields [1, 2, 3]
 var createBubbleSort = function(array) {
-  // Your code goes here. Feel free to add helper functions if needed.
-
-  var bubbleSort = function(array) {
-    // Moar code here plz
-  };
-
-  return bubbleSort;
+	var counter = 0
+	if (Object.prototype.toString.call(array) === "[object Array]") {
+		while (counter < array.length) {
+			for (var i = 0; i < array.length; i++) {
+				if (array[i] > array[i+1]) {
+					var holder = array[i];
+					array[i] = array[i+1];
+					array[i+1] = holder;
+				}
+			}
+			counter++;
+		}
+		return array;
+	} else {
+		throw "NO";
+	}
 };
+
+
