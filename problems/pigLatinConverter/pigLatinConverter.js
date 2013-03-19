@@ -18,5 +18,12 @@
 
 
 var convertToPigLatin = function(string) {
-  // Your code here
+  var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  for (var i = 0; i < vowels.length; i++) {
+    if (string[0] === vowels[i]) {
+      return string = string + 'ay';
+    } else {
+      return string = string.slice(1) + string[0] + 'ay'
+    }
+  }
 };
