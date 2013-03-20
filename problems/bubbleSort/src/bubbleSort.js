@@ -43,7 +43,7 @@ var createBubbleSort = function(array) {
 		}
 		return array;
 	} else {
-		throw "NO";
+		throw new TypeError('Need array');
 	}
 };
 
