@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spec Runner</title>
+    <link rel="stylesheet" type="text/css" href="../lib/mocha/mocha.css">
+    <script src="../lib/jquery/jquery-1.9.1.js"></script>
+    <script src="../lib/underscore/underscore-min.js"></script>
+    <script src="../lib/mocha/mocha.js"></script>
+    <script src="../lib/expect/expect.js"></script>
+    <script src="../lib/sinon/sinon.js"></script>
+
+    <!-- Tell mocha to use bdd-style expects -->
+    <script>
+      mocha.setup('bdd')
+    </script>
+
+    <!-- Load your code here -->
+    <script src="src/commonStringFinder.js"></script>
+
+    <!-- Load tests and helpers here -->
+    <script src="spec/spec.js"></script>
+
+    <script>
+      // Mocha expects a global onload var here and automagically executes
+      // it on pageload. (No, you can't put var in front of it.)
+      onload = function(){
+        mocha.run();
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Display area for tests -->
+    <div id="mocha"></div>
+  </body>
+</html>
