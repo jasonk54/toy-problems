@@ -8,7 +8,16 @@ var random1to5 = function() {
 };
 
 var random1to7 = function() {
-  var oneTofive = random1to5();
-  return Math.floor(oneToFive * 1.5);
+	var matrix = [
+  	[1,1,1,2,2],
+	  [2,3,3,3,4],
+  	[4,4,5,5,5],
+	  [6,6,6,7,7],
+  	[7,0,0,0,0]
+	];	
+	return matrix[random1to5()-1][random1to5()-1] || random1to7();
 };
+
+
+
 
