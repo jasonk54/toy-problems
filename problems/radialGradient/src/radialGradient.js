@@ -27,7 +27,15 @@ var createGradient = function(elementId, stops) {
   // Creates the gradient out of a list of stops and appends it to the stage.
   // Returns the completed element.
   gradient.draw = function() {
-    // Your code here.
+    var count = 50;
+    var $width = parseInt($('#gradient').css('width'))  //returns int.  Must add 'px'.
+    while (count < $width) {
+    	// Loop through the current div #gradient and make another 
+    	// div within the #gradient.  The size of the new gradient 
+    	// should be #gradient width and height - 50.
+    	$('#gradient').append('<div></div>');
+
+    }
   };
 
   return gradient;

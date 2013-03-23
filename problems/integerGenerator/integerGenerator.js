@@ -4,9 +4,11 @@
  */
 
 var random1to5 = function() {
- // Your code goes here
+ return Math.ceil(Math.random()*5);
 };
 
 var random1to7 = function() {
-  // Your code goes here. Use the function above to implement this function.
+  var oneTofive = random1to5();
+  return Math.floor(oneToFive * 1.5);
 };
+
