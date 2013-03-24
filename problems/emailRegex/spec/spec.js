@@ -17,7 +17,7 @@ describe('emailValidator', function() {
       flag = flag && emailValidator(address);
     });
 
-    expect(flag).to.be(true);
+    expect(flag).to.be(false);
   });
 
   xit('should return true even when a really weird, invalid-looking email is run through it', function() {
