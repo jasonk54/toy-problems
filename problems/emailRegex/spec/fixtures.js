@@ -23,7 +23,7 @@ var invalidEmails = [
   'email.@domain.com',
   'email..email@domain.com',
   'あいうえお@domain.com',
-  'email@domain.com',
+  'email@domain.com.',
   'email@domain',
   'email@-domain.com',
   'email@domain.web',
