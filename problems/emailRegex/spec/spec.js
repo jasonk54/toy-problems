@@ -11,10 +11,10 @@ describe('emailValidator', function() {
   });
 
   it('should return false when an invalid email is run through it', function() {
-    var flag = true;
+    var flag = false;
 
     invalidEmails.forEach(function(address) {
-      flag = flag && emailValidator(address);
+      flag = flag || emailValidator(address);
     });
 
     expect(flag).to.be(false);
