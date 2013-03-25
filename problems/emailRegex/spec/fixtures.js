@@ -5,10 +5,8 @@ var validEmails = [
   'firstname+lastname@domain.com',
   'email@123.123.123.123',
   'email@[123.123.123.123]',
-  '"email"@domain.com',
   '1234567890@domain.com',
   'email@domain-one.com',
-  '_______@domain.com',
   'email@domain.name',
   'email@domain.co.jp',
   'firstname-lastname@domain.com'
