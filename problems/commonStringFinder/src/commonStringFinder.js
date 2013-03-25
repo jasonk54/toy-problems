@@ -30,4 +30,4 @@ var commonStringFinder = function(string1, string2) {
 			}
 		}
 	}
-	return result.join('');
+	return result.join(''
