@@ -23,7 +23,7 @@ var primeTester = function(n) {
 //Returns an array of prime number between n1 to n2
 var primeNum = function(n1, n2) {
   var result = [];
-  for (var i = n1; i < n2; i++) {
+  for (var i = n1; i <= n2; i++) {
     if (primeTester(i)) {
       result.push(i);
     }
