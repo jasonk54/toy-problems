@@ -17,6 +17,33 @@
  * pseudo-natural language.
  */
 
+var randomNumGenerator = function(min, max) {
+  return Math.floor((Math.random() * max) + min);
+}
+
 var generateFillerText = function(wordCount) {
-  // Your code here
+  var chars = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 
+    'h', 'i', 'j', 'k', 'l', 'm', 'n',
+    'o', 'p', 'q', 'r', 's', 't', 'u',
+    'v', 'w', 'x', 'y', 'z'
+    ];
+  _.each(chars, function(ele) {
+    chars.push(ele.toUpperCase());
+  });
+
+  var result = [];
+  var words = 0;
+
+  while (words < wordCount) {
+    var temp = [];
+    for (var i = 0; i < randomNumGenerator(1,12); i++) {
+      temp.push(chars[randomNumGenerator(0, chars.length-1)]);
+    }
+    result.push(temp.join(''));
+    words++;
+  }
+  result = result.join(' ');
+  result = result.charAt(0).toUpperCase() + result.slice(1);
+  return result;
 };
