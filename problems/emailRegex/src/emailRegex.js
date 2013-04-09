@@ -7,5 +7,11 @@
  */
 
 var emailValidator = function(address) {
-  // Your code here
+  var regex = /[^.](\"*)@(.+\.\w{2,}$)/;
+  var result = address.search(regex);
+  if (result > -1) {
+    return true;
+  } else {
+    return false;
+  }
 };

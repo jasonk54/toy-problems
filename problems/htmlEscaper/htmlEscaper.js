@@ -19,6 +19,16 @@
 //   http://www.degraeve.com/reference/urlencoding.php
 //
 
-
 var htmlEscaper = function(string) {
+	// (Using Regex)  return string.replace(/\s/g, '%20');
+	// (Not using Regex)
+var string = string.split('');
+for (var i = 0; i < string.length; i++) {
+	if (string[i] === ' ') {
+		string[i] = string[i].replace(' ', '%20');
+	}
+}
+return string.join('');
 };
+
+

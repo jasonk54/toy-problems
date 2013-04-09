@@ -4,5 +4,9 @@
 // requires O(1) time
 
 var reverseArray = function(array){
-  // todo!
+  for (var i = 0; i < array.length/2; i++){
+    var hold = array[i];// last element
+    array[i] = array[(array.length  - 1 - i];
+    array[array.length-i-1] = hold;
+  }
 };
