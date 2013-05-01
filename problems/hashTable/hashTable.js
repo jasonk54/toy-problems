@@ -1,5 +1,5 @@
 /**
- * Create a hash table with set, get, and remove methods.
+ * Create a hash table with insert, retrieve, and remove methods.
  * Be sure to handle hashing collisions correctly.
  * Set your hash table up to double the storage limit as
  * soon as 3/4th of the slots in the storage array are occupied.
@@ -11,10 +11,10 @@ var makeHashTable = function(){
   var storage = [];
   var storageLimit = 4;
 
-  result.set = function(key, value){
+  result.insert = function(key, value){
   };
 
-  result.get = function(key){
+  result.retrieve = function(key){
   };
 
   result.remove = function(key){
