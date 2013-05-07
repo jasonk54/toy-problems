@@ -4,6 +4,10 @@
  * Extra credit: Modify your linked list to be a doubly linked list.
  */
 
-var makeLinkedList = function() {
-  // Your code here
-};
+function LinkedList(){
+  var linked = {
+    length: 0,
+    head: null,
+    tail: null
+  }
+}

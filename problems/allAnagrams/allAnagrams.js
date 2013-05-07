@@ -5,7 +5,14 @@
  *
  * Extra credit: Deduplicate your return array without using uniq().
  */
-
+string = 'abc'
 var allAnagrams = function(string) {
-  // Your code here.
-};
+  var result = [];
+  string = string.split('');
+  for (var i = 0; i < string.length; i++)
+
+  var temp = string.shift();
+  result.push(string.sort() + temp);
+  console.log(result)
+}
+
