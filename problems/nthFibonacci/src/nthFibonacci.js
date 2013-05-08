@@ -6,9 +6,9 @@
  *
  *   0 1 1 2 3
  *
- * If n were 4, your function should return 3; for 5, it should return 5.
+ * If n were 4, your function should return 2; for 5, it should return 3.
  *
- * Write a function that accepts a number, n (0-index), and returns the nth Fibonacci
+ * Write a function that accepts a number, n, and returns the nth Fibonacci
  * number. Use a recursive solution to this problem; if you finish with time
  * left over, implement an iterative solution.
  */
