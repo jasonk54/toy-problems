@@ -10,7 +10,7 @@ var findMissingNumber = function(array) {
 };
 
 /**
- * It's dangerous to go without an array! Use this.
+ * It's dangerous to go without an array! Use this. You'll need underscore.
  *
  * Generates an array with every number between 1 and 100000, with one random
  * number excluded.
@@ -25,5 +25,5 @@ var testArray = (function() {
     i !== rand && result.push(i);
   }
 
-  return result;
+  return _.shuffle(result);
 }());
