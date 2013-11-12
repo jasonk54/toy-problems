@@ -5,11 +5,12 @@
  * you can think of
  *
  * For example:
- *   traverseSpirally([ [1,2,3], [4,5,6], [7,8,9] ]);
+ *   traverseSpirally([ [1,2,3], 
+ 						[4,5,6], 
+ 						[7,8,9] 
+ 						]);
  * would result in printing:
  *   1 2 3 6 9 8 7 4 5
  */
 
-var traverseSpirally = function(matrix){
-  // Your code here
-};
+var traverseSpirally = function(matrix) {}

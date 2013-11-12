@@ -1,23 +1,23 @@
 /**
- * Quicksort is a sorting algorithm that uses a divide and conquer strategy; it
- * takes in an array and using a pivot value, splits the array in half and puts
- * all the numbers greater than the pivot in the top half, and all the numbers
- * lower than the pivot in the bottom half. It then recurses on each half until
- * the array is sorted.
- *
- * Most JavaScript implementations have three components: the main function
- * body, which determines when to start and stop sorting; a swap function to
- * swap variables between the two halves of the array; and a 'partitioner'
- * function, which does the actual sorting.
- *
  * Your mission: Implement quicksort!
- */
+*/
 
-var makeQuicksort = function() {
-  var quicksort = function(array) {
-    // Your code here. You'll also need a few supporting functions, which you
-    // can put outside the body of this function if you'd like.
-  };
+var quicksort = function(arr) {
+	// Base case
+	if (arr.length <= 1) return arr;
 
-  return quicksort;
-};
+	var pivotPoint = Math.floor((arr.length - 1) / 2),
+		pivotValue = arr[pivotPoint],
+		less = [], 
+		more = [];
+
+	arr.splice(pivotPoint, 1);
+	for (var i = 0; i < arr.length; i++) {
+		if (arr[i] < pivotValue) {
+			less.push(arr[i]);
+		} else {
+			more.push(arr[i]);
+		}
+	}
+	return (quicksort(less)).concat([pivotValue], quicksort(more));
+}
