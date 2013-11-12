@@ -14,6 +14,7 @@ var getElementsByClassName = function(className){
 					if (currentNode.attributes.class.value === className) {
 						nodeArr.push(currentNode)
 					}
+					tree(currentNode)
 				}
 				currentNode = currentNode.nextSibling;
 			}
