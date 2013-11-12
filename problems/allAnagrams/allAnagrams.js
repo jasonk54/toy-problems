@@ -5,14 +5,29 @@
  *
  * Extra credit: Deduplicate your return array without using uniq().
  */
-string = 'abc'
-var allAnagrams = function(string) {
-  var result = [];
-  string = string.split('');
-  for (var i = 0; i < string.length; i++)
 
-  var temp = string.shift();
-  result.push(string.sort() + temp);
-  console.log(result)
+var result = [], usedChars = [];
+var allAnagrams = function(str) {
+	var	str = str.split(''),
+		ch;
+
+	for (var i = 0; i < str.length; i++) {
+		// Plucks one character at the given index
+		ch = str.splice(i, 1);
+		
+		// Push char to usedChars
+		usedChars.push(ch);
+
+		// If string length is 0, push usedChars into result array
+		if (str.length === 0) {
+			result.push(usedChars.join(''));
+		}
+
+		allAnagrams(str.join(''));
+		str.splice(i, 0, ch);
+		usedChars.pop();
+	}
+	return result;
 }
+
 
