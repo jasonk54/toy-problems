@@ -3,5 +3,22 @@
 // To get started, you may use jQuery, but try to refactor it out once you have it working
 
 var getElementsByClassName = function(className){
-  // todo!
+	var nodeArr = [];
+
+	var tree = function(node) {
+		var node = node || document.getElementsByTagName('body')[0];
+		if (node.hasChildNodes()) {
+			var currentNode = node.firstChild;
+			while (currentNode) {
+				if (currentNode.nodeType === 1 && currentNode.attributes.class) {
+					if (currentNode.attributes.class.value === className) {
+						nodeArr.push(currentNode)
+					}
+				}
+				currentNode = currentNode.nextSibling;
+			}
+		}
+	}
+	tree();
+	return nodeArr;
 };
